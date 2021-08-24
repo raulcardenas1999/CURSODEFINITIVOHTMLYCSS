@@ -1,0 +1,16 @@
+p {
+  /*selector por etiqueta o elemento*/
+  color: blue;
+  font-size: 40px;
+}
+
+/*class: Selector por clase*/
+.parrafo {
+  color: red;
+}
+
+/*ID: Selector por id*/
+#texto {
+  color: yellow;
+  font-size: 24px;
+}
