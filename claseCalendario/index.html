@@ -8,29 +8,45 @@
   </head>
   <body>
     <form action="">
-      <label for="hora">
-        <span>Hora</span>
-        <input type="time" id="hora" name="hora" />
+      <label for="nombre">
+        <span>¿Cual es tu nombre?</span>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          autocomplete="name"
+          required
+        />
       </label>
-      <label for="dia">
-        <span>Día</span>
-        <input type="date" id="dia" name="dia" />
+      <label for="correo">
+        <span>¿Cual es tu correo?</span>
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          autocomplete="email"
+          required
+        />
       </label>
-      <label for="semana">
-        <span>Semana</span>
-        <input type="week" id="semana" name="semana" />
+      <label for="pais">
+        <span>¿Cual es tu pais?</span>
+        <input
+          type="text"
+          name="pais"
+          id="pais"
+          autocomplete="country"
+          required
+        />
       </label>
-      <label for="mes">
-        <span>Mes</span>
-        <input type="month" id="mes" name="mes" />
-      </label>
-      <input type="submit" />
-    </form>
-    <form action="">
-      <label for="calendario">
-        <span>Calendario</span>
-        <input type="datetime-local" id="calendario" name="calendario" />
-        <!--La etiqueta name, me sirve para cuando vaya a enviar datos al backend por javascript u otro metodo-->
+      <label for="cp">
+        <span>¿Cual es tu codigo postal?</span>
+        <input
+          type="text"
+          name="cp"
+          id="cp"
+          autocomplete="postal-code"
+          required
+        />
       </label>
       <input type="submit" />
     </form>
