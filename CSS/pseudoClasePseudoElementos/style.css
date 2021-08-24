@@ -1,0 +1,28 @@
+.main-nav {
+  margin-top: 10px; /*Coloca un espacio en la parte de arriba dentro de este contenedor*/
+  list-style: none; /*Eliminar los bullets point*/
+  padding-left: 0px; /*Coloca un espacio en la parte izquierda dentro de este contenedor*/
+  background-color: #13a4a4; /*Coloca un color de fondo en este contendor*/
+}
+.main-nav__item {
+  display: inline-block;
+}
+.main-nav__item a {
+  /*Llamado a etiqueta especificamente*/
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.main-nav__item a:hover {
+  /*PseudoClase*/
+  color: blue;
+}
+.main-nav__item a:active {
+  /*PseudoClase*/
+  color: red;
+}
+.main-nav__item::after {
+  content: " | ";
+  color: white;
+}
