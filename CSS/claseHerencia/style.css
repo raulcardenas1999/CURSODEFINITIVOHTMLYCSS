@@ -1,0 +1,9 @@
+html {
+  /*Podemos ver que para h1, html no es padre, por eso no toma el 75% del tamaño pero si es padre en el tipo de fuente*/
+  font-size: 75%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: inherit; /*Le estamos diciendo que herede de su padre el tamaño*/
+}
