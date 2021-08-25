@@ -1,0 +1,4 @@
+h2 + p {
+  /*Hermano adyacente o cercano, pero por debajo de este, no arriba*/
+  color: red;
+}
