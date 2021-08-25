@@ -1,4 +1,8 @@
-h2 + p {
-  /*Hermano adyacente o cercano, pero por debajo de este, no arriba*/
+/*h2 + p {          Combinador hermano adyacente o cercano
+  /*Hermano adyacente o cercano, pero por debajo de este, no arriba
+  color: red;
+}*/
+
+h2 ~ p {
   color: red;
 }
