@@ -1,0 +1,10 @@
+/* body {      La medida em no es la mejor y funciona multiplicando la medida del padre.
+  font-size: 20px;
+} */
+.text-container {
+  font-size: 1.5em;
+}
+
+.text-container div {
+  font-size: 1.5em;
+}
