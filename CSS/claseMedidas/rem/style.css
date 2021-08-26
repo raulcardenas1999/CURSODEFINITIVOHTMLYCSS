@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box; /*Buena practica*/
+  margin: 0; /*Buena practica*/
+  padding: 0; /*Buena practica*/
+}
+/* El rem es el valor del root o del padre mayor, es decir el html, entonces 1rem = 16 px
+esto se cumple siempre */
+html {
+  font-size: 62.5%; /*Buena practica*/
+  /* De esta forma se coloca la medida estandar, pues ahora con este calculo 1.6 rem = 16 px */
+}
+p {
+  font-size: 1.6rem;
+}
+main div {
+  font-size: 1.6rem;
+}
