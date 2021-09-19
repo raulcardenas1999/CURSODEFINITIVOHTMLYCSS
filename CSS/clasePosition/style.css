@@ -1,0 +1,28 @@
+/*La posición static viene por defecto*/
+/*position absolute: pierde la posición en el campo de ese contenedor*/
+/*position relative: Sigue teniendo su posición pero puedo moverlo en ese espacio, ejemplo: colocarle un bottom, el se movera hacia arriba pero no pierde la posición*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  border: 2px black dotted;
+  display: inline-block;
+}
+.box {
+  display: inline-block;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+#two {
+  background-color: green;
+}
+#one {
+  position: absolute;
+}
+#four {
+  position: relative;
+  bottom: 10px;
+}
