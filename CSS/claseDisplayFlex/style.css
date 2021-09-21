@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+.container {
+  border: 0.3rem solid black;
+  display: flex; /*Hace que sus hijos sean flexibles, tengan un comportamiento deferente, por defecto trae la flex-direction:row(fila), pero tambien podemos cambiarlos a column(columna)*/
+  /*flex-direction: column;*/
+  /*flex-direction: column-reverse;*/ /*Nos voltea los contenedores, ahora el ultima es el box1*/
+  /*flex-direction: column-reverse;*/
+  flex-wrap: wrap; /*Cuando el viewport se acorta ya sea vertical o horizontal, los contenedores que se ven acortados para a una fila o columna por debajo y asi se evita porblemas de visibilidad*/
+  /*justify-content: center; Nos permite centrar los contenedores :)*/
+  justify-content: space-evenly; /*Nos permite ver como se divide cada contenedor con espacios iguales entre ellos*/
+}
+.box {
+  width: 10rem;
+  height: 10rem;
+}
+.box1 {
+  background-color: aqua;
+}
+.box2 {
+  background-color: blue;
+}
+.box3 {
+  background-color: blueviolet;
+}
+.box4 {
+  background-color: burlywood;
+}
+.box5 {
+  background-color: coral;
+}
+.box6 {
+  background-color: darkorange;
+}
