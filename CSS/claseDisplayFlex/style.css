@@ -11,23 +11,31 @@ body {
 }
 .container {
   border: 0.3rem solid black;
-  display: flex; /*Hace que sus hijos sean flexibles, tengan un comportamiento deferente, por defecto trae la flex-direction:row(fila), pero tambien podemos cambiarlos a column(columna)*/
-  /*flex-direction: column;*/
-  /*flex-direction: column-reverse;*/ /*Nos voltea los contenedores, ahora el ultima es el box1*/
-  /*flex-direction: column-reverse;*/
-  flex-wrap: wrap; /*Cuando el viewport se acorta ya sea vertical o horizontal, los contenedores que se ven acortados para a una fila o columna por debajo y asi se evita porblemas de visibilidad*/
-  /*justify-content: center; Nos permite centrar los contenedores :)*/
-  justify-content: space-evenly; /*Nos permite ver como se divide cada contenedor con espacios iguales entre ellos*/
+  display: flex;
+  /*align-items: flex-start; Envia mis contenedores al inicio del contenedor padre verticalmente, viene por defecto*/
+  /*align-items: center; Nos permite centrar de manera vertical los contenedores*/
+  /*align-items: flex-end; Envia mis contenedores hijos al final del contenedor padre verticalmente*/
+  /*align-items: stretch; permite que se estiren al 100% del contenedor padre siempre y cuando no tenga una altura definida*/
+  /*align-items: baseline; Va a tomar el alto solo de su contenido siempre y cuando no tenga una altura definida*/
+  /*height: 50vh;*/
+  flex-wrap: wrap; /*Si es muy chico el width y los contenedores no pueden mantener el ancho, este se baja una fila*/
 }
 .box {
-  width: 10rem;
+  /*width: 10rem;*/
   height: 10rem;
+  flex-basis: 10rem; /*Tamaño inicial del contenedor*/
+  flex-grow: 1; /*permite que el contenedor tome el restante del viewport width*/
 }
+/*Con la configuración del .container y .box se puede hacer un gran estilo responsive*/
 .box1 {
   background-color: aqua;
+  flex-grow: 1; /*Toma el espacio que sobre de forma horizontal o width*/
+  /*order: 1;*/
 }
 .box2 {
   background-color: blue;
+  /*flex-grow: 1; Toma el espacio que sobre de forma horizontal o width*/
+  /*order: 3;*/
 }
 .box3 {
   background-color: blueviolet;
@@ -37,7 +45,10 @@ body {
 }
 .box5 {
   background-color: coral;
+  /*order: 4;*/
 }
 .box6 {
   background-color: darkorange;
+  /*order: 2;*/
 }
+/*Order, si le colocamos ordenes a nuestros contenedores ellos se alinean pero si a alguno de ellos no se le coloca orden, este tomara siempre un lugar a la izquierda de los que si estan con orden*/
