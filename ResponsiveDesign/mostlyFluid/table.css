@@ -1,0 +1,6 @@
+/*Mientras la pantalla sea mas grande a 600 px aplique lo siguiente*/
+.c2,
+.c3,
+.c4 {
+  width: 50%;
+}
