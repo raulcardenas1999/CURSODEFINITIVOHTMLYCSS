@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <picture>
+        <!--Se supone que las imagenes se deben colocar de mayor viewport a la de menor viewport-->
+        <source media="(min-width:500px)" srcset="./img/Large.jpg" />
+        <source media="(min-width:700px)" srcset="./img/Medium.jpg" />
+        <img src="./img/Small.jpg" alt="Es una imagen de ejemplo" />
+      </picture>
+    </main>
+  </body>
+</html>
